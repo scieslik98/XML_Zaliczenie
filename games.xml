@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt_style.xslt"?>
+<!DOCTYPE games[
+
+<!ELEMENT games (game+)>
+	<!ELEMENT game (title,studio,year,price,rating,cover)>
+	<!ATTLIST game type (strategy|rpg|shooter) #REQUIRED>
+	
+	<!ELEMENT title (#PCDATA)>
+	
+	<!ELEMENT studio (#PCDATA)>
+	
+	<!ELEMENT year (#PCDATA)>
+	
+	<!ELEMENT price (#PCDATA)>
+	<!ATTLIST price freshness (nope|yes) #REQUIRED>
+	
+	<!ELEMENT rating (#PCDATA)>
+	
+	<!ELEMENT cover (#PCDATA)>
+	<!ATTLIST cover platform (pc|xbox) #REQUIRED>
+]>
+	<games>
+		<game type="strategy">
+			<title>Red Alert 2</title>
+			<studio>Studio: Westwood Studio</studio>
+			<year>Year of publishment 2000</year>
+			<price freshness="nope">Price: 35zł</price>
+			<rating >Rating: 7.7</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/1051675828.jpg</cover>
+		</game>
+		
+		<game type="strategy">
+			<title>Medieval II Total War</title>
+			<studio>Studio: SEGA</studio>
+			<year>Year of publishment 2006</year>
+			<price freshness="yes">Price: 30zł</price>
+			<rating>Rating: 8.0</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/60153000.jpg</cover>
+		</game>
+		
+		<game type="strategy">
+			<title>Star Craft</title>
+			<studio>Studio: Blizzard Entertainment</studio>
+			<year>Year of publishment 1998</year>
+			<price freshness="yes">Price: Free</price>
+			<rating>Rating: 9.1</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/450223109.jpg</cover>
+		</game>
+		
+		<game type="strategy">
+			<title>Command and Conquer Generals</title>
+			<studio>Studio: Electronic Arts</studio>
+			<year>Year of publishment 2003</year>
+			<price freshness="yes">Price: 5zł</price>
+			<rating>Rating: 8.2</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/1119807671.jpg</cover>
+		</game>
+		
+		<game type="rpg">
+			<title>Wiedźmin 3: Dziki Gon</title>
+			<studio>Studio: CD Projekt RED</studio>
+			<year>Year of publishment 2015</year>
+			<price freshness="yes">Price: 50zł</price>
+			<rating>Rating: 10.0</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/grupy/13689.jpg</cover>
+		</game>
+		
+		<game type="rpg">
+			<title>Gothic</title>
+			<studio>Studio: Piranha Bytes</studio>
+			<year>Year of publishment 2001</year>
+			<price freshness="yes">Price: 5zł</price>
+			<rating>Rating: 7.8</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/1135460781.jpg</cover>
+		</game>
+		
+		<game type="rpg">
+			<title>Mass Efect</title>
+			<studio>Studio: BioWare Corporation</studio>
+			<year>Year of publishment 2007</year>
+			<price freshness="yes">Price: 40zł</price>
+			<rating>Rating: 8.9</rating>
+			<cover platform="xbox">https://cdn.gracza.pl/galeria/gry13/grupy/2049.jpg</cover>
+		</game>
+
+		<game type="shooter">
+			<title>Fallout New Vegas</title>
+			<studio>Studio: Obsidian Entertainment</studio>
+			<year>Year of publishment 2010</year>
+			<price freshness="yes">Price: 25zł</price>
+			<rating>Rating: 8.1</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/grupy/1087.jpg</cover>
+		</game>
+		
+		<game type="shooter">
+			<title>CoD: Modern Warfare 2</title>
+			<studio>Studio: Infinity Ward</studio>
+			<year>Year of publishment 2009</year>
+			<price freshness="yes">Price: 35zł</price>
+			<rating>Rating: 8.4</rating>
+			<cover platform="pc">https://cdn.gracza.pl/galeria/gry13/grupy/2457.jpg</cover>
+		</game>
+		
+		<game type="shooter">
+			<title>Bulletstorm</title>
+			<studio>Studio: People Can Fly</studio>
+			<year>Year of publishment 2011</year>
+			<price freshness="nope">Price: 30zł</price>
+			<rating>Rating: 8.5</rating>
+			<cover platform="xbox">https://cdn.gracza.pl/galeria/gry13/grupy/1226.jpg</cover>
+		</game>
+
+	</games>
